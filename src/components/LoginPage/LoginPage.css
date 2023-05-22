@@ -1,0 +1,143 @@
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+
+@keyframes gradient {
+  100% {
+    background-size: 4000px 1000px;
+  }
+}
+
+body {
+  place-items: center;
+  margin: 0;
+  padding: 0 24px;
+  /* background-image: url("./birimbaoLogo.jpg");  */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='1000' preserveAspectRatio='none' viewBox='0 0 1440 1000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1057%26quot%3b)' fill='none'%3e%3crect width='1440' height='1000' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c515.156C94.594%2c503.991%2c165.48%2c433.039%2c249.685%2c388.517C343.364%2c338.985%2c469.041%2c330.076%2c522.777%2c238.744C576.927%2c146.708%2c550.02%2c28.049%2c522.471%2c-75.12C497.053%2c-170.309%2c436.619%2c-247.972%2c372.775%2c-323.012C308.389%2c-398.688%2c245.012%2c-481.882%2c150.449%2c-512.381C54.899%2c-543.198%2c-44.467%2c-504.446%2c-143.761%2c-489.605C-260.173%2c-472.206%2c-408.086%2c-509.27%2c-482.196%2c-417.825C-556.79%2c-325.784%2c-483.515%2c-188.08%2c-484.143%2c-69.609C-484.668%2c29.522%2c-520.041%2c128.808%2c-485.584%2c221.759C-449.883%2c318.065%2c-378.581%2c399.178%2c-290.672%2c452.294C-204.072%2c504.619%2c-100.483%2c527.016%2c0%2c515.156' fill='%23091b2e'%3e%3c/path%3e%3cpath d='M1440 1465.921C1527.191 1457.439 1605.975 1420.253 1680.761 1374.6309999999999 1757.114 1328.054 1818.866 1267.625 1876.782 1199.472 1954.605 1107.894 2081.715 1028.505 2076.943 908.421 2072.242 790.125 1944.145 718.1859999999999 1854.5810000000001 640.7629999999999 1776.009 572.841 1691.122 513.113 1590.3890000000001 487.821 1492.218 463.172 1391.804 477.26300000000003 1293.126 499.794 1188.898 523.592 1063.353 533.1949999999999 1003.549 621.813 943.649 710.573 1020.6279999999999 831.759 998.409 936.509 973.701 1052.993 829.012 1148.721 867.914 1261.263 905.804 1370.878 1057.924 1385.534 1167.126 1424.6 1255.536 1456.228 1346.544 1475.013 1440 1465.921' fill='%23133960'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1057'%3e%3crect width='1440' height='1000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #f9f9f9;
+  font-family: "Euclid Circular A";
+  /* animation: gradient 10s infinite alternate linear; */
+}
+
+@media (width >= 500px) {
+  body {
+    padding: 0;
+  }
+}
+
+.login {
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 80%;
+  translate: -50% -50%;
+  width: 90%;
+  padding: 70px 30px 44px;
+  border-radius: 22px;
+  background: #575757;
+  text-align: center;
+}
+
+@media (width >= 450px) {
+  .login {
+    width: 380px;
+  }
+}
+
+.avatar {
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #157ae1, #c7a1ff);
+  padding: 2px;
+  width: 120px;
+  height: 120px;
+}
+
+.avatar > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+
+  border: 4px solid #161616;
+}
+
+.login > h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+
+.login > h3 {
+  color: rgba(255, 255, 255, 0.943);
+  margin: 0 0 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.login-form {
+  display: grid;
+  gap: 16px;
+  place-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.textbox {
+  width: 100%;
+  position: relative;
+}
+
+/* .textbox span {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  translate: 0 -50%;
+  color: rgb(12, 12, 12);
+} */
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.login-form input {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.623);
+  font-size: 18px;
+  padding: 0 20px 0 50px;
+  color: inherit;
+}
+
+.login-form input:focus {
+  border-color: #157ae1;
+}
+
+.login-form input:focus ~ span {
+  color: #157ae1;
+}
+
+.login-form button {
+  cursor: pointer;
+  background: #157ae1;
+  color: #f9f9f9;
+  border: 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.login-form a {
+  color: #157ae1;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+}
