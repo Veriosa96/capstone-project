@@ -1,10 +1,11 @@
 const initialState = {
+    registered : false,
     loggedIn : false,
     token: null,
     error: null,
 };
 
-const loginReducer = (state = initialState, action) => {
+const mainReducer = (state = initialState, action) => {
     switch(action.type) {
         case 'LOGIN_SUCCESS':
             return {
@@ -13,9 +14,17 @@ const loginReducer = (state = initialState, action) => {
                 token: action.payload,
                 error:null,
             };
+            case 'SIGNUP SUCCESSFULLY':
+            return {
+                ...state,
+                registered: true,
+                token: action.payload,
+                error: null,
+            }
                 default:
                     return state;
     }
 };
 
-export default loginReducer;
+
+export default mainReducer;
